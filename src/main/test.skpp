@@ -1,0 +1,4 @@
+event.block_break stone:
+    out "You broke stone!" -> pl
+    ? {test.player} == !:
+        += 1 -> {test.score}
